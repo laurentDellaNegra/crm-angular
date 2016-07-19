@@ -1,11 +1,12 @@
 # CRM
 
-A small Angular app using Webpack and module architecture Angular 1.5 (components).
+A small Angular app using Webpack, PouchDB and module architecture Angular 1.5 (components).
 
 This workflow serves as a starting point for building Angular 1.x applications using Webpack.
 
 * Module architecture using components helper (Angular 1.5)
 * Webpack configuration.
+* PouchDB database.
 * ES6, and ES7 support with babel.
 * Source maps included in all builds.
 * Development server with live reload.
