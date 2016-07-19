@@ -1,0 +1,41 @@
+<div>
+  <prospect-loadfile on-load-companies="$ctrl.loadCompanies(companies)"></prospect-loadfile>
+  <button class="btn btn-default" type="button" ng-click="$ctrl.cleanCompanies()">
+    <span class="glyphicon glyphicon-trash"></span>&nbsp;Clean
+  </button>
+  <hr/>
+  <div ng-show="$ctrl.companies.length" class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+    	<thead>
+    		<tr>
+    			<th>Num&eacute;ro</th>
+    			<th>Société</th>
+    			<th>Activité</th>
+    			<th>Adresse</th>
+    			<th>C.P.</th>
+    			<th>Ville</th>
+    			<th>Mobile</th>
+    			<th>Email</th>
+    			<th>Siret</th>
+    			<th>Code Naf</th>
+    			<th>Effectifs</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr ng-repeat="company in $ctrl.companies">
+    			<th scope="row">{{$index}}</th>
+    			<td ng-bind="company.societe"></td>
+    			<td ng-bind="company.activite"></td>
+    			<td ng-bind="company.adresse"></td>
+    			<td ng-bind="company.cp"></td>
+    			<td ng-bind="company.ville"></td>
+    			<td ng-bind="company.mobile"></td>
+    			<td ng-bind="company.email"></td>
+    			<td ng-bind="company.siret"></td>
+    			<td ng-bind="company.codeNaf"></td>
+    			<td ng-bind="company.effectifs"></td>
+    		</tr>
+    	</tbody>
+    </table>
+  </div>
+</div>
