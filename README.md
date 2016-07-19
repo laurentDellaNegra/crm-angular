@@ -17,7 +17,12 @@ This workflow serves as a starting point for building Angular 1.x applications u
 
 >Warning: Make sure you're using the latest version of Node.js and NPM
 
-### Quick start
+## Version 1.0.0
+
+This first version is very simple, it contains the modular architecture and the prospect view.
+You can click on "Prospect", import an xlxs/xls file with a specific format in "src/data/91-PLOMBIERS.xls" or just import the local file (json format). Once the file imported, it is store in the browser database with PouchDB. You can refresh the page and data are still displayed.
+
+## Quick start
 
 > Clone/Download the repo
 
@@ -38,7 +43,7 @@ $ npm start
 go to [http://localhost:8080](http://localhost:8080) in your browser.
 
 
-### Build files
+## Build files
 
 * single run: `npm run build`
 * build files and watch: `npm run watch`
